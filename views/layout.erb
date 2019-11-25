@@ -4,9 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- href is the path starting in the public folder, as erb always looks in that folder  -->
+    <link rel="stylesheet" href="/style.css">
+
+
   <title>Rock, Paper, Scissors</title>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/Game">Play!</a></li>
+    </ul>
+  </nav>
   <!-- sinatra finds the yield within the body and yields it to the result file -->
 <%= yield %>
 </body>
