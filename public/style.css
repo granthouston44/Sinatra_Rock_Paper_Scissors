@@ -1,0 +1,13 @@
+
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: teal;
+
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+
+}
+.color-box {float:left; background-color:#000; width: 200px; height: 200px;}
