@@ -10,11 +10,12 @@ def test_logic_draw
   assert_equal("draw!", Game.play('scissors','scissors'))
 end
 
-def test_logic_wins
+def test_logic_player1_wins
   assert_equal("Player1 wins!", Game.play('scissors', 'paper'))
 end
 
-def test_logic_loses
+def test_logic_player2_wins
+
   assert_equal("Player2 wins!", Game.play('rock', 'paper'))
 end
 
