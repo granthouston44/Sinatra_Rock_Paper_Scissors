@@ -20,17 +20,12 @@ class Game
     when player1 == 'rock' && player2 == 'scissors'
       "Player1 wins!"
     end
-
-
-
-
-
-
   end
 
-
-
-
+  def self.computer_player
+    computer_move = ['rock', 'paper', 'scissors']
+    return computer_move.sample
+  end
 
 
 

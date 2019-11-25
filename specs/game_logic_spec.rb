@@ -15,8 +15,9 @@ def test_logic_player1_wins
 end
 
 def test_logic_player2_wins
-
   assert_equal("Player2 wins!", Game.play('rock', 'paper'))
 end
+
+
 
 end

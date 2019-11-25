@@ -1,7 +1,7 @@
 require('sinatra')
 require('sinatra/contrib/all') if development?
 
-require_relative('models/game')
+require_relative('models/Game')
 also_reload('./models/*') #if anything in the models folder changes, dont worry about restarting the server - sinatra will do it for us
 
 get '/game/:player1/:player2' do
