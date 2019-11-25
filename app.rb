@@ -22,8 +22,8 @@ end
 
 get '/game/:player1' do
 player1 = params['player1']
-player2 = Game.computer_player
-@result = Game.play(player1,player2)
+@player2 = Game.computer_player
+@result = Game.play(player1,@player2)
 #when calling erb sinatra will look for a views folder with the symbol filename
 erb(:result)
 end

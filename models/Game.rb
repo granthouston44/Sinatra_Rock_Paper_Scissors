@@ -8,23 +8,24 @@ class Game
     when player1 == player2
       "draw!"
     when player1 == 'scissors' && player2 == 'paper'
-      "Player1 wins!"
+      "You win!!"
     when player1 == 'scissors' && player2 == 'rock'
-      "Player2 wins!"
+      "You lose!!"
     when player1 == 'paper' && player2 == 'rock'
-      "Player1 wins!"
+      "You win!!"
     when player1 == 'paper' && player2 == 'scissors'
-      "Player2 wins!"
+      "You lose!!"
     when player1 == 'rock' && player2 == 'paper'
-      "Player2 wins!"
+      "You lose!!"
     when player1 == 'rock' && player2 == 'scissors'
-      "Player1 wins!"
+      "You win!!"
     end
   end
 
   def self.computer_player
     computer_move = ['rock', 'paper', 'scissors']
-    return computer_move.sample
+    sampled_move = computer_move.sample
+    p sampled_move
   end
 
 
