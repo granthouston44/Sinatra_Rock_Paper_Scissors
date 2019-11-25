@@ -22,7 +22,7 @@ class Game
     end
   end
 
-  def computer_player
+  def self.computer_player
     computer_move = ['rock', 'paper', 'scissors']
     return computer_move.sample
   end
